@@ -1,0 +1,227 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <!-- Fire-themed CSS -->
+    <link rel="stylesheet" href="./resources/css/index.css" />
+
+    <!-- jQuery (optional) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+     <!-- Universal Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <!-- Replace asp-controller/action with normal hrefs -->
+      <a href="index.html" class="logo">DevIgnite</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    </div>
+  </nav>
+
+
+    <section id="about-us">
+       
+            <header>
+                <h2 class="section-title">Our Projects</h2>
+                <p class="section-description">
+                    Here are some of our notable projects, each with a brief overview, a demo video,
+                    and the key skills we gained during development.
+                </p>
+            </header>
+
+    </section>
+
+    <div class="project-cards">
+        <!-- Project 1: Alleysway Website-->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-front">
+                    <!-- Front side of the card-->
+                    <div class="project-info">
+                        <h3><a href="https://github.com/UndeadRonin99/Alleysway-website.git">Alleysway Website</a></h3>
+                        <p>
+                            A robust ASP.NET Core MVC site integrating Firebase for multi-role functionality
+                            and real-time session bookings.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <!-- Back side of the card (detailed info) -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/OxSpskRw8iA" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>What We Did</h4>
+                    <ul>
+                        <li>Implemented Google OAuth for secure login</li>
+                        <li>Set up role-based access for admins and clients</li>
+                        <li>Integrated real-time session management with Firebase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2: Alleysway App-->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-front">
+                    <!-- Front side of the card-->
+                    <div class="project-info">
+                        <h3><a href="https://github.com/UndeadRonin99/Alleysway-App.git">Alleysway App</a></h3>
+                        <p>
+                            An Android fitness application for workout logging, weight tracking, and personal trainer bookings.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <!-- Back side of the card (detailed info) -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/OxSpskRw8iA" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>What We Did</h4>
+                    <ul>
+                        <li>Developed the workout logging feature</li>
+                        <li>Implemented Google Firebase Realtime DB</li>
+                        <li>Created secure payment flow for booking sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project 3: Payment Portal-->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-front">
+                    <!-- Front side of the card-->
+                    <div class="project-info">
+                        <h3><a href="https://github.com/UndeadRonin99/Payment-Portal.git">Payment Portal</a></h3>
+                        <p>
+                            A React + Express.js web app for user payments and verification, 
+                            featuring JWT-based login and role management.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <!-- Back side of the card (detailed info) -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/clSogC3Acyc" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>What We Did</h4>
+                    <ul>
+                        <li>Built secure login with JWT & bcrypt</li>
+                        <li>Set up CI/CD pipelines via CircleCI</li>
+                        <li>Implemented payment verification logic</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 4: Fusion API: Backend Service-->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-front">
+                    <!-- Front side of the card-->
+                    <div class="project-info">
+                        <h3><a href="https://github.com/UndeadRonin99/Fusion_API.git">Fusion API: Backend Service</a></h3>
+                        <p>
+                            Backend for meal planning and recipe management, featuring Firebase auth and dynamic grocery lists.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <!-- Back side of the card (detailed info) -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/j97t5qKFvp4" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>What We Did</h4>
+                    <ul>
+                        <li>Developed RESTful endpoints for meal planning</li>
+                        <li>Integrated third-party recipe APIs</li>
+                        <li>Handled cloud deployment on Render.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 5: Fusion: Meal Planning App-->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-front">
+                    <!-- Front side of the card-->
+                    <div class="project-info">
+                        <h3><a href="https://github.com/UndeadRonin99/Fusion.git">Fusion: Meal Planning App</a></h3>
+                        <p>
+                            A comprehensive Android meal planner with recipe browsing, grocery auto-generation,
+                            and optional biometric login.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <!-- Back side of the card (detailed info) -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VplMxy9QUXQ" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>What We Did</h4>
+                    <ul>
+                        <li>Implemented multi-language support (English/Afrikaans)</li>
+                        <li>Connected to Firebase for user auth & data sync</li>
+                        <li>Used Retrofit for dynamic recipe retrieval</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 6: ClockIT: Time Management System-->
+        <div class="project-card">
+            <div class="project-card-inner">
+                <div class="project-front">
+                    <!-- Front side of the card-->
+                    <div class="project-info">
+                        <h3><a href="https://github.com/UndeadRonin99/ClockIT.git">ClockIT: Time Management System</a></h3>
+                        <p>
+                            Advanced scheduling and time tracking system built with Kotlin and Firebase.
+                        </p>
+                    </div>
+                </div>
+                <div class="project-back">
+                    <!-- Back side of the card (detailed info) -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/waPscszF9Eo" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>What We Did</h4>
+                    <ul>
+                        <li>Designed time tracking & scheduling algorithms</li>
+                        <li>Collaborated in a group using Git & agile methods</li>
+                        <li>Created a user-friendly interface for tasks & deadlines</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+}
+    </script>
+
+       <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 DevIgnite.</p>
+    </footer>
+</body>
+</html>
